@@ -18,7 +18,7 @@ tasks=(
 for (( i=1; i<=543; i++ )); do
     # Determine if it's a commit day or not (60% chance of a commit)
     commit_day=$((RANDOM % 10))
-    if [ $commit_day -lt 5 ]; then
+    if [ $commit_day -lt 3 ]; then
         # Determine the number of commits for this day
         num_commits=1
         # On random days, make more than one commit
